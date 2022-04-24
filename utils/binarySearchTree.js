@@ -49,6 +49,21 @@ class BinarySearchTree {
     }
     return data
   }
+
+  depthFirstSearch(type = 'preOrder') {
+    let data = []
+    function traverse(node) {
+      if (!node) return
+      type === 'preOrder' && data.push(node.value)
+      traverse(node.left)
+      type === 'inOrder' && data.push(node.value)
+      traverse(node.right)
+      type === 'postOrder' && data.push(node.value)
+    }
+
+    traverse(this.root)
+    return data
+  }
 }
 
 module.exports = BinarySearchTree
