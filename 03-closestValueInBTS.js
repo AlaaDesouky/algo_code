@@ -4,8 +4,8 @@
 // Method 2: iterate over the tree, compare each node to the targetValue and update the closestValue
 
 // Initial setup
-const BTS = require('./utils/binarySearchTree')
-const Tree = new BTS()
+const BST = require('./utils/binarySearchTree')
+const Tree = new BST()
 const values = [10, 5, 6, 2, 1, 15, 14, 1, 22, 13]
 values.map(value => Tree.insert(value))
 
