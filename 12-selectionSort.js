@@ -1,6 +1,6 @@
 // Objectives: implement selection sort
 // Data: array = [141,1,17,-7,-17,-27, 18, 541, 8, 11, 135]
-// Method: 
+// Method: iterate over the array, divide the array into two arrays by keeping track of the index of the sorted one, find the smallest number in the array, then swap it.
 
 // Approach: O(n^2) time | O(1) space
 function selectionSort(array) {
